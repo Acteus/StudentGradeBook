@@ -70,8 +70,7 @@ This project uses JavaFX, which is covered under its own licenses. See the legal
 
 ## Contributors
 
-- [Your Name]
-- [Other Contributors]
+- Garren Dullas
 
 ## Future Enhancements
 
