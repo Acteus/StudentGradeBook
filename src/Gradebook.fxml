@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.MainController">
+    <left>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <TextField fx:id="nameField" promptText="Student Name" />
+            <TextField fx:id="gradeField" promptText="Grade" />
+            <Button text="Add Student" onAction="#handleAdd" />
+            <Button text="Remove Student" onAction="#handleRemove" />
+            <Button text="Sort by Grade" onAction="#handleSort" />
+            <Button text="Mark Attendance" onAction="#handleMarkAttendance" />
+            <Button text="Clear Attendance" onAction="#handleClearAttendance" />
+        </VBox>
+    </left>
+
+    <center>
+        <VBox>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Students" />
+            <ListView fx:id="studentListView" prefHeight="200" />
+        </VBox>
+    </center>
+
+    <right>
+        <VBox>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Attendance" />
+            <ListView fx:id="attendanceListView" prefHeight="200" />
+        </VBox>
+    </right>
+</BorderPane>
